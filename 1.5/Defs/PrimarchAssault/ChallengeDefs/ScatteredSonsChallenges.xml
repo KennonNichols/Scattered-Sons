@@ -5,6 +5,7 @@
         <championName>Lion El'Jonson</championName>
         <description>Summons the Primarch of the Dark Angels, Lion El'Jonson.</description>
         <iconPath>Icons/Lion</iconPath>
+        <championHp>50000</championHp>
         <healthBarPath>Healthbars/HealthBar</healthBarPath>
         <healthBarX>100</healthBarX>
         <healthBarY>75</healthBarY>
@@ -184,6 +185,7 @@
         <championName>Roboute Guilliman, Lord of Ultramar</championName>
         <description>Summons the Lord of Ultramar and leader of the Ultramarines, Roboute Guilliman.</description>
         <iconPath>Icons/Guilliman</iconPath>
+        <championHp>50000</championHp>
         <healthBarPath>Healthbars/HealthBar</healthBarPath>
         <healthBarX>100</healthBarX>
         <healthBarY>75</healthBarY>
