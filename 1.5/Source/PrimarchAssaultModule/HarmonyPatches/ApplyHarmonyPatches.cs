@@ -23,12 +23,21 @@ namespace PrimarchAssault.HarmonyPatches
 			//Does not take damage if they are a champion, instead marks it on their health bar
 			if (__instance.health.hediffSet.TryGetHediff(PADefsOf.GWPA_Champion, out Hediff hediff) && hediff is Hediff_Champion champion)
 			{
+				//If they have a shield
 				if (__instance.TryGetComp(out CompShield shield))
-				{
+				{	
+					//Which is active
 					if (shield.ShieldState == ShieldState.Active)
 					{
-						return true;
+						//Allow damage through, only if it's ranged or explosive
+						if (dinfo.Def.isRanged || dinfo.Def.isExplosive)
+						{
+							return true;
+						}
 					}
+					
+					
+
 				}
 				float hpToRemove = HealthBarChangeAmount(dinfo);
 				dinfo.SetAmount(0);

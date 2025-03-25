@@ -5,7 +5,6 @@
         <championName>Lion El'Jonson</championName>
         <description>Summons the Primarch of the Dark Angels, Lion El'Jonson.</description>
         <iconPath>Icons/Lion</iconPath>
-        <championHp>50000</championHp>
         <healthBarPath>Healthbars/HealthBar</healthBarPath>
         <healthBarX>100</healthBarX>
         <healthBarY>75</healthBarY>
@@ -53,7 +52,7 @@
         </championDetails>
 
         <phaseOneWavesInPriority>
-            <li MayRequireAnyOf="HappyPurging.AgeofDarkness, HappyPurging.AgeofDarknessLite">
+            <li MayRequireAnyOf="HappyPurging.AgeofDarkness,HappyPurging.AgeofDarknessLite">
                 <pawnKinds>
                     <li>GW_SM_DA_SniperScout</li>
                     <li>GW_SM_DA_ShotgunScout</li>
@@ -185,7 +184,6 @@
         <championName>Roboute Guilliman, Lord of Ultramar</championName>
         <description>Summons the Lord of Ultramar and leader of the Ultramarines, Roboute Guilliman.</description>
         <iconPath>Icons/Guilliman</iconPath>
-        <championHp>50000</championHp>
         <healthBarPath>Healthbars/HealthBar</healthBarPath>
         <healthBarX>100</healthBarX>
         <healthBarY>75</healthBarY>
@@ -332,7 +330,7 @@
             <li MayRequireAnyOf="HappyPurging.AgeofDarkness,HappyPurging.AgeofDarknessLite">
                 <stage>.75</stage>
                 <abilitiesToGain>
-                    <li MayRequireAnyOf="HappyPurging.AgeofDarkness,HappyPurging.AgeofDarknessLite">GWPA_GuillimanReinforcement</li>
+                    <li>GWPA_GuillimanReinforcement</li>
                 </abilitiesToGain>
             </li>
         </abilityStages>
