@@ -33,8 +33,15 @@ namespace PrimarchAssault.External
         public List<ChampionAbilityStage> abilityStages;
         public List<ChampionHediffStage> hediffStages;
         public List<ChampionEventStage> eventStages;
+<<<<<<< Updated upstream
         public ThingDef championDrop;
 
+=======
+        public List<ThingDefCountClass> championDrops;
+        
+        public float championHp;
+        
+>>>>>>> Stashed changes
         private Color primarchColor;
 
         public int healthBarX;
@@ -187,7 +194,7 @@ namespace PrimarchAssault.External
             }
         }
 
-        public void SpawnChampion(bool isPhaseTwo, ThingDef championsChampionDrop)
+        public void SpawnChampion(bool isPhaseTwo, List<ThingDefCountClass> championsChampionDrop)
         {
             announcementSound.PlayOneShotOnCamera();
             
@@ -224,7 +231,7 @@ namespace PrimarchAssault.External
                 stages.AddRange(eventStages);
             }
             
-            championHediff.SetupHediff(championsChampionDrop, stages, this, isPhaseTwo);
+            championHediff.SetupHediff(championsChampionDrop, stages, this, !isPhaseTwo);
             champion.health.AddHediff(championHediff);
 
             if (championFlinchSeverity > 0)
