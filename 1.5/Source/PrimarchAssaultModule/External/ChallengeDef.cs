@@ -34,9 +34,12 @@ namespace PrimarchAssault.External
         public List<ChampionHediffStage> hediffStages;
         public List<ChampionEventStage> eventStages;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         public ThingDef championDrop;
 
 =======
+=======
+>>>>>>> Stashed changes
         public List<ThingDefCountClass> championDrops;
         
         public float championHp;

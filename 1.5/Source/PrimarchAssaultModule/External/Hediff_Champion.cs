@@ -44,6 +44,7 @@ namespace PrimarchAssault.External
             _stages?.Where(stage => stage is ChampionEventStage { triggerOnChampionKilled: true }).Do(stage => stage.Apply(pawn, pawn.Corpse.Map)) ;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
             if (pawn.MapHeld != null)
             {
@@ -60,6 +61,8 @@ namespace PrimarchAssault.External
             
             if (_droppedThing != null) GenSpawn.Spawn(_droppedThing, pawn.Position, pawn.Corpse.Map);
 =======
+=======
+>>>>>>> Stashed changes
             if (_droppedThings != null)
             {
 	            foreach (ThingDefCountClass droppedThing in _droppedThings)
@@ -80,6 +83,9 @@ namespace PrimarchAssault.External
 	            }
 
             }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
             if (_doesQueuePhaseTwo)
